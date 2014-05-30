@@ -47,6 +47,7 @@ The source code for the API server is here, in case you're interested: [api/serv
 
 > Q: Write a function where the input is an array of integers and the output is the value that 
 > appears the most times consecutively (in a row). Ex: [1, 2, 2, 5, 5, 5, 2, 2] => 5
+> What is the Big-O complexity of your solution (in both time and space)? Why?
 
 
 Solutions in : [problem1/solutionA.py](/problem1/solutionA.py)
@@ -70,6 +71,7 @@ Assuming there is a good reason to write a more optimal, custom solution like th
 
 > Q: Write a function where the input is an array of integers and the output is the value that
 > appears most frequently. Ex: [1, 2, 2, 5, 5, 5, 2, 2] => 2
+> What is the Big-O complexity of your solution (in both time and space)? Why?
 
 
 Solutions  ==> [problem1/solutionB.py](/problem1/solutionB.py)
@@ -105,6 +107,7 @@ I tried to think of possibilities for techniques requiring only log(n) space or 
 > 
 > The goal is to produce a single log file with the combined data from all the log 
 > files, sorted in ascending order.
+> What is the Big-O complexity of your solution (in both time and space)? Why?
 
 ##### Part A)  Merging the logs with the given API
 
@@ -114,7 +117,7 @@ Unit tests in: [problem2/solutionA_test.py](/problem2/solutionA_test.py)  (Execu
 
 The solution gives a way to merge the logs using the provided API as well as a custom merge sort implementation.  The unit tests only cover the merge sort routine though because it seemed like recognizing the opportunity to use it along with spotting the deficiencies in the given API were the real goal of the exercise (i.e. acutally testing some log file merges didn't seem worth the time it would take to do it).
 
-Nevertheless, the solution pulls and sorts all the entries in memory using **O(n)** space before writing it to some final, sorted output stream.  I'd imagine that in a real-world scenario the timestamp ranges within each log file might mutually exclusive (or at least *mostly* different) so if I had more time, I would have probably tried some different heuristics to figure out if it was possible to consider merging and outputting subsets of log entries in the files instead of pulling the whole dataset into memory.  That might potentially help, depending on the data, but the asymptotic space complexity would still be the same (**O(n)**).  Whether or not any heuristics like that were used, the time complexity would still be **O(n)** as well since the log entries from each file were already sorted.
+Nevertheless, the solution pulls and sorts all the entries in memory using **O(n)** space before writing it to some final, sorted output stream.  I'd imagine that in a real-world scenario the timestamp ranges within each log file might mutually exclusive (or at least *mostly* different) so if I had more time, I would have probably tried some different heuristics to figure out if it was possible to consider merging and outputting subsets of log entries in the files instead of pulling the whole dataset into memory.  That might potentially help, depending on the data, but the asymptotic space complexity would still be the same, **O(n)**.  Whether or not any heuristics like that were used, the time complexity would still be **O(n)** as well since the log entries from each file were already sorted.
 
 
 ##### Part C)  Dealing with a larger-than-memory dataset using the given API
@@ -142,15 +145,16 @@ If that was the case, then it would be pretty straightforward to do a k-way merg
 > and the property: every node on the right subtree has to be larger than the
 > current node and every node on the left subtree has to be smaller (or equal) than 
 > the current node.
+> What is the Big-O complexity of your solution (in both time and space)? Why?
 
 ##### Part A)  Find the Nth element in a BST
 
 Solutions in : [problem3/solutionA.py](/problem3/solutionA.py)
 
-Unit tests in: [problem3/solutionA_test.py](/problem3/solutionA_test.py)  (Executable via a main method)
+Unit tests in: [problem3/solutionA_test.py](/jastr/problem3/solutionA_test.py)  (Executable via a main method)
 
 I stared at this for a long time and then ultimately decided I didn't think it was possible in sub-linear time/space since it doesn't seem feasible to find a ranked element in a BST that you don't know the size of without potentially traversing it.  I have a sneaking suspicion that some googling might prove me wrong in like 2 seconds, but in the interest of fairness, I just went ahead with an in-order traversal instead since I couldn't think of anything better.
 
 The solution I put together though works by moving recursively, depth-first, and left-first throughout the tree to enumerate the nodes in order from least to greatest.  Starting with the node having the smallest value, a counter is incremented within the traversal until **N** nodes are encountered, at which point the value for that node is returned.
 
-The space and time complexity for this approach are both **O(|E| + |V|)**.
+The space and time complexity for this approach are both **O(|E| + |V|)** since the traversal involves visiting each vertex across each edge and the graph representation is in adjacency list form.
