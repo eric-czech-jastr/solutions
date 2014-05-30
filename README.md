@@ -37,7 +37,7 @@ I'll leave the explanations of each solution to the sections following, but as a
     
 The API is deployed on a free (yay!), micro AWS instance.
 
-The source code for the API server is here, in case you're interested: [api/server.py](/api/server.py)
+The source code for the API server is here, in case you're interested: [api/server.py](/jastr/api/server.py)
 
 ***
 ## Problem 1
