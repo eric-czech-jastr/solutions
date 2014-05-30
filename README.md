@@ -1,4 +1,3 @@
-***
 # JASTR Coding Challenge Solutions
 
 The python packages in this project contain solutions relevant to each of the 3 problems posed. 
