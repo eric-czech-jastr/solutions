@@ -35,7 +35,7 @@ I'll leave the explanations of each solution to the sections following, but as a
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/merge_sort/?list1=0,1,2,3,4&list2=1,3,6,8
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/merge_sort/?list1=1,kdl,3,5&list2=2,asdf,,,4,6
     
-The API is deployed on a free (yay!), micro AWS instance.
+The API is deployed on a free-tier, micro AWS instance.  You gotta love AWS -- it's awesome being able to do this for free!
 
 The source code for the API server is here, in case you're interested: [api/server.py](/jastr/api/server.py)
 
