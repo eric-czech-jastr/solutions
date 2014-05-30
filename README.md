@@ -12,7 +12,7 @@ Also, for most of the solutions I tried to include both a sort of "practical" wa
 \* *Apologies for any style inconsistencies or weird idioms -- I'm much more of a java person but am trying to become pythonic on a production-worthy level ASAP.*
 
 Solutions and Explanations:
-# [Solution API](#solution-api)
+* [Solution API](#solution-api)
 * [Problem 1 - Frequency and consecutive item functions](#problem-1)
 * [Problem 2 - Log merging](#problem-2)
 * [Problem 3 - BST index search](#problem-3)
@@ -21,11 +21,9 @@ Solutions and Explanations:
 ## Solution API
 
 As a quicker, easier way to look at some of the results produced by the code answering these questions, I put some 
-of the solutions behind a REST API.  I thought this would be easier than trying to make sure you have a compatible python
-environment with the source code in the project, in case you want to actually run anything.
+of the solutions behind a REST API.  I thought this would be easier than trying to make sure you have a compatible python environment with the source code in the project, in case you want to actually run anything.
 
-I'll leave the explanations of each solution to the sections following, but as a quick reference, here's what's immediately 
-available from the API:
+I'll leave the explanations of each solution to the sections following, but as a quick reference, here's what's immediately available from the API:
 
 * Querying for the item in a list with the largest number of consecutive appearances
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_consecutive/1,2,2,5,5,5,2,2
@@ -38,7 +36,7 @@ available from the API:
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/merge_sort/?list1=0,1,2,3,4&list2=1,3,6,8
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/merge_sort/?list1=1,kdl,3,5&list2=2,asdf,,,4,6
     
-The API is deployed on a free (yay!) micro, AWS instance.
+The API is deployed on a free (yay!), micro AWS instance.
 
 The source code for the API server is here, in case you're interested: [api/server.py](/api/server.py)
 
