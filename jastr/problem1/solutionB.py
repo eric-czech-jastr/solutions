@@ -39,7 +39,7 @@ def findMostFrequentValue_ideal(arr, c=.5):
     complexity of this routine where the computational complexity = O( n^( 1+c ) ), 
     and the storage complexity = O( n^( 1-c ) + n^c ).
     
-    Here are the effects of some common settings for 'c' (must be between 0 and .5):
+    Here are the characteristics of some common settings for 'c' (must be between 0 and .5):
     A) 0    --> High speed - O(n), High storage overhead - O(n):
             equivalent to computing a single histogram (i.e. the naive approach)
     B) .25  --> Medium speed - O(n^1.25), Medium storage overhead - O(n^.75 + n^.25)
@@ -58,6 +58,9 @@ def findMostFrequentValue_ideal(arr, c=.5):
     """
     if not arr:
         return None
+    
+    # Limit c to the restrict range described above
+    c = min(max(0, c), .5)
     
     # Since we're going through the trouble of implementing a solution to
     # this problem that doesn't require O(n) space, let's also assume
