@@ -1,7 +1,7 @@
 '''
 Created on May 29, 2014
 
-Solutions for the following problem:
+Solution for the following problem:
 
 "A) Write a function where the input is a binary search tree of integers and the
 output is the Nth-greatest value in the tree. The BST is defined by a root node 

@@ -39,6 +39,10 @@ def findMostFrequentValue_ideal(arr, c=.5):
     complexity of this routine where the computational complexity = O( n^( 1+c ) ), 
     and the storage complexity = O( n^( 1-c ) + n^c ).
     
+    * This storage complexity comes from the fact that the size of each bucket, processed
+    one at a time, is O( n^( 1-c ) ).  In addition to that, a most frequently occurring item
+    from each bucket must be retained, incurring O(n^c) more space usage (i.e. the number of buckets).
+    
     Here are the characteristics of some common settings for 'c' (must be between 0 and .5):
     A) 0    --> High speed - O(n), High storage overhead - O(n):
             equivalent to computing a single histogram (i.e. the naive approach)
@@ -63,7 +67,7 @@ def findMostFrequentValue_ideal(arr, c=.5):
     c = min(max(0, c), .5)
     
     # Since we're going through the trouble of implementing a solution to
-    # this problem that doesn't require O(n) space, let's also assume
+    # this problem that doesn't necessarily require O(n) space, let's also assume
     # that the input would really be an iterator in a real-life scenario
     # where the number of elements contained is too large to put in memory
     # at once (i.e. as a list/array).  

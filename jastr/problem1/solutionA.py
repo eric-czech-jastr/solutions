@@ -28,7 +28,7 @@ def findMostConsecutivelyRepeatingValue_practical(arr):
         A tuple in the form (most_consectively_repeating_value, number_of_consecutive_appearances)
         or None if the input list is empty
     """
-    if not arr:
+    if not arr: 
         return None
     grouped = [(k, sum(1 for _ in g)) for k,g in groupby(arr)]
     return nlargest(1, grouped, key=lambda x: x[1])[0]
