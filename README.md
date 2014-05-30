@@ -9,7 +9,7 @@ Every module then has a companion set of unit tests to show example usage and ve
 
 Also, for most of the solutions I tried to include both a sort of "practical" way to solve the problem, as well as a more theoretically "ideal" (in space/time complexity) solution.  I've always thought that it's really important to be able to do both well, so hopefully I've pulled that off here.  Having two solutions was also convenient for unit testing where the results of a known library could be compared against my custom functions to make sure they're semantically correct (I do this frequently in a production setting too).
 
-\* *Apologies for any style inconsistencies or weird idioms -- I'm much more of a java person but am trying to get pythonic ASAP*
+\* *Apologies for any style inconsistencies or weird idioms -- I'm much more of a java person but am trying to become pythonic on a production-worthy level ASAP.*
 
 Solutions and Explanations:
 # [Solution API](#solution-api)
