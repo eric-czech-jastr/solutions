@@ -26,7 +26,7 @@ I'll leave the explanations of each solution to the sections following, but as a
 
 * Querying for the item in a list with the largest number of consecutive appearances
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_consecutive/1,2,2,5,5,5,2,2
-    * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_consecutive/1,2,,,1,1,1 ,1 ,asdf,3,3
+    * [http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_consecutive/1,2,,,1,1,1 ,1 ,asdf,3,3](http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_consecutive/1,2,,,1,1,1 ,1 ,asdf,3,3)
 * Querying for the item in a list that occurs most frequently
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_frequent/1,2,2,5,5,5,2,2
     * http://ec2-50-112-200-1.us-west-2.compute.amazonaws.com:5000/most_frequent/1,2,1,2,2,3,1,1,1,1,1,asdf,3,2,3
