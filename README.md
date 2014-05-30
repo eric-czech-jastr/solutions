@@ -157,4 +157,5 @@ I stared at this for a long time and then ultimately decided I didn't think it w
 
 The solution I put together though works by moving recursively, depth-first, and left-first throughout the tree to enumerate the nodes in order from least to greatest.  Starting with the node having the smallest value, a counter is incremented within the traversal until **N** nodes are encountered, at which point the value for that node is returned.
 
-The space and time complexity for this approach are both **O(|E| + |V|)** since the traversal involves visiting each vertex across each edge and the graph representation is in adjacency list form.
+The space and time complexity for this approach are both **O(|E| + |V|)** since the traversal involves visiting each vertex across each edge and the graph representation doesn't involve matrices or something else requiring **O(n^2)** (or **O(|V| ^ 2)**) space. 
+
