@@ -3,7 +3,7 @@
 
 The python packages in this project contain solutions relevant to each of the 3 problems posed. 
 
-Each package contains at least one module answering a particular subpart of the question that actually involved coding.
+Each package contains at least one module answering a subpart of some question, if that subpart called for some actually coding (all other answers are in this README).
 
 Every module then has a companion set of unit tests to show example usage and verify that the solutions are correct (hopefully!).
 
