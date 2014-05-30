@@ -50,9 +50,9 @@ The source code for the API server is here, in case you're interested: [api/serv
 > What is the Big-O complexity of your solution (in both time and space)? Why?
 
 
-Solutions in : [problem1/solutionA.py](/problem1/solutionA.py)
+Solutions in : [problem1/solutionA.py](/jastr/problem1/solutionA.py)
 
-Unit tests in: [problem1/solutionA_test.py](/problem1/solutionA_test.py)  (Executable via a main method)
+Unit tests in: [problem1/solutionA_test.py](/jastr/problem1/solutionA_test.py)  (Executable via a main method)
 
 
 A "practical" solution to this problem, like this:
@@ -74,9 +74,9 @@ Assuming there is a good reason to write a more optimal, custom solution like th
 > What is the Big-O complexity of your solution (in both time and space)? Why?
 
 
-Solutions  ==> [problem1/solutionB.py](/problem1/solutionB.py)
+Solutions  ==> [problem1/solutionB.py](/jastr/problem1/solutionB.py)
 
-Unit tests ==> [problem1/solutionB_test.py](/problem1/solutionB_test.py)  (Executable via a main method)
+Unit tests ==> [problem1/solutionB_test.py](/jastr/problem1/solutionB_test.py)  (Executable via a main method)
 
 
 A "practical" solution to this problem, like this:
@@ -111,9 +111,9 @@ I tried to think of possibilities for techniques requiring only log(n) space or 
 
 ##### Part A)  Merging the logs with the given API
 
-Solutions in : [problem2/solutionA.py](/problem2/solutionA.py)
+Solutions in : [problem2/solutionA.py](/jastr/problem2/solutionA.py)
 
-Unit tests in: [problem2/solutionA_test.py](/problem2/solutionA_test.py)  (Executable via a main method)
+Unit tests in: [problem2/solutionA_test.py](/jastr/problem2/solutionA_test.py)  (Executable via a main method)
 
 The solution gives a way to merge the logs using the provided API as well as a custom merge sort implementation.  The unit tests only cover the merge sort routine though because it seemed like recognizing the opportunity to use it along with spotting the deficiencies in the given API were the real goal of the exercise (i.e. acutally testing some log file merges didn't seem worth the time it would take to do it).
 
@@ -149,7 +149,7 @@ If that was the case, then it would be pretty straightforward to do a k-way merg
 
 ##### Part A)  Find the Nth element in a BST
 
-Solutions in : [problem3/solutionA.py](/problem3/solutionA.py)
+Solutions in : [problem3/solutionA.py](/jastr/problem3/solutionA.py)
 
 Unit tests in: [problem3/solutionA_test.py](/jastr/problem3/solutionA_test.py)  (Executable via a main method)
 
